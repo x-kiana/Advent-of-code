@@ -6,9 +6,7 @@ int main(int argc, char* argv[]) {
 	int size = 0;
 	int element = 0;
 
-	FILE* file = fopen(argv[1], "r");
-
-	while (fscanf(file, "%d", &element) != EOF) {
+	while (scanf("%d", &element) != EOF) {
 		entries[size++] = element;
 	}
 
@@ -33,8 +31,6 @@ int main(int argc, char* argv[]) {
 	}
 
 	printf("pt2 count is: %d\n", inc);
-
-	fclose(file);
 
 	return 0;
 }
