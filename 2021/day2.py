@@ -1,9 +1,9 @@
-import fileinput
+import sys
 x = 0
 y = 0
 aim = 0
 
-for entry in fileinput.input():
+for entry in sys.stdin:
     dir, value = entry.split()
     if dir == 'forward':
         x += int(value)
