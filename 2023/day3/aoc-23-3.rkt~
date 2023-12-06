@@ -1,0 +1,10 @@
+#lang racket
+(define (port->lines port)
+  (let ([x (read-line port 'any)])
+    (cond [(eof-object? x) empty]
+          [else
+           (cons x (port->lines port))])))
+
+(define input (port->lines (open-input-file "aoc-23-3.txt")))
+
+(define (calc-coordinates 
