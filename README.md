@@ -3,3 +3,6 @@ Going through AoC puzzles because why not. I will try to solve the puzzles using
 
 Update 2023:
 Or.. maybe just do them all in racket?
+
+Update 2024:
+We'll see if life lets me go through these all
